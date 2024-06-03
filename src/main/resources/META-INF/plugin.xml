@@ -1,0 +1,27 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin require-restart="true">
+    <!--  id is a unique identifier for marketplace, cannot be changed once published -->
+    <id>com.example.inlays</id>
+    <name>hello</name>
+    <vendor>world</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+
+        <codeInsight.declarativeInlayProvider
+                language=""
+                isEnabledByDefault="true"
+                implementationClass="com.example.inlays.demo.lsp.MyDeclarativeInlayHintsProvider"
+        />
+
+    </extensions>
+
+    <actions>
+
+    </actions>
+
+    <applicationListeners>
+
+    </applicationListeners>
+</idea-plugin>
