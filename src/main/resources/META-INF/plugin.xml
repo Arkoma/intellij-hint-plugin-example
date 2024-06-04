@@ -9,10 +9,8 @@
 
     <extensions defaultExtensionNs="com.intellij">
 
-        <codeInsight.declarativeInlayProvider
-                language=""
-                isEnabledByDefault="true"
-                implementationClass="com.example.inlays.demo.lsp.MyDeclarativeInlayHintsProvider"
+        <codeInsight.declarativeInlayProviderFactory
+                implementationClass="com.example.inlays.demo.lsp.MyInlayHintFactory"
         />
 
     </extensions>
